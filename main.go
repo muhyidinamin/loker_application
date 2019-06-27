@@ -80,7 +80,7 @@ func runCommand(commandStr string) error {
 			}
 		}
 		if !found {
-			return errors.New("Maaf loker sudah penuh")
+			fmt.Println("Maaf loker sudah penuh")
 		}
 		return nil
 
@@ -107,7 +107,7 @@ func runCommand(commandStr string) error {
 			}
 		}
 		if !found {
-			return errors.New("Nomor identitas tidak ditemukan")
+			fmt.Println("Nomor identitas tidak ditemukan")
 		}
 		return nil
 
