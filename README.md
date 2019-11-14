@@ -1,36 +1,64 @@
-# loker_application
-Usage:
-● Run the program : 
-    go run main.go
-● Initial the size of locker. example : 
-    init 5
-● Input the card identity use type Identity and Identity Number. example : 
-    input SIM 12345
-● Check the list of locker status. 
-    status
-● For empty the locker use number of locker you want. example : 
-    leave 2 
-● To find the Locker number by identity number. example :
-    find 12345
-● To search all list of identity number by type of identity. example : 
-    search SIM
-● For exit the program.
-    exit
+# Simple Locker Application with Command Line
 
-Penggunaan: 
-● menjalankan program : 
+Simple Locker Application with Command Line
+
+## Requirements
+- [Golang](https://golang.org/dl/)
+
+## Installation Guide
+
+- Before installing this Project, make sure your computer already installed application in the `requirements` First.
+
+- Clone this Project to your local Computer
+
+## Usage
+- Run the program
+    ```
     go run main.go
-● untuk membuat jumlah loker :
-    init [jumlah loker]
-● untuk menampilkan status dari masing - masing nomor loker
+    ```
+- Initial size of locker using. example :
+    ```
+    init [size of locker]
+    ```
+- Input the card identity with type Identity and Identity Number. example : 
+    ```
+    input [type id] [id number]
+    ```
+- Check the list of locker status.
+    ```
     status
-● untuk memasukkan kartu identitas
-    input [tipe identitas] [nomor identitas]
-● untuk mengosongkan loker
-    leave [nomor loker]
-● untuk menampilkan nomor loker berdasar nomor identitas
-    find [nomor identitas]
-● untuk menampilkan daftar nomor identitas sesuai tipe identitas yang dicari
-    search [tipe identitas]
-● untuk mengakhiri program
-    exit 
+    ```
+- For empty the locker use number of locker you want. example :
+    ```
+    leave [number of locker]
+    ```
+- To find the Locker number by identity number. example :
+    ```
+    find [id number]
+    ```
+- To search all list of identity number by type of identity. example : 
+    ```
+    search [type id]
+    ```
+- For exit the program.
+    ```
+    exit
+    ```
+
+## Example
+Below is example to run the command line. 
+    ```
+    go run main.go
+    init 5
+    input SIM 12345
+    status
+    leave 2
+    find 12345
+    search SIM
+    exit
+    ```
+## Run the test
+To run the test use this command. 
+    ```
+    go test
+    ```
