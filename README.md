@@ -1,4 +1,4 @@
-# Simple Locker Application with Command Line
+# Simple Locker Application
 
 Simple Locker Application with Command Line
 
@@ -46,8 +46,6 @@ Simple Locker Application with Command Line
     ```
 
 ## Example
-Below is example to run the command line. 
-    ```
     go run main.go
     init 5
     input SIM 12345
@@ -56,7 +54,7 @@ Below is example to run the command line.
     find 12345
     search SIM
     exit
-    ```
+    
 ## Run the test
 To run the test use this command. 
     ```
